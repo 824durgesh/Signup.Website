@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Successful</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, #43cea2 0%, #185a9d 100%);
+            font-family: 'Segoe UI', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .success-box {
+            background: white;
+            padding: 40px;
+            max-width: 420px;
+            width: 100%;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 10px 35px rgba(0,0,0,0.25);
+        }
+        h2 {
+            color: #185a9d;
+            margin-bottom: 15px;
+        }
+        p {
+            color: #333;
+            font-size: 16px;
+            margin-bottom: 8px;
+        }
+        .back-btn {
+            margin-top: 20px;
+            display: inline-block;
+            background: #185a9d;
+            padding: 12px 20px;
+            border-radius: 6px;
+            color: white;
+            font-size: 16px;
+            text-decoration: none;
+            transition: .3s;
+        }
+        .back-btn:hover {
+            background: #133f6f;
+        }
+    </style>
+</head>
+<body>
+    <div class="success-box">
+        <h2>✅ Signup Successful</h2>
+        <p><b>Name:</b> {{ name }}</p>
+        <p><b>Email:</b> {{ email }}</p>
+
+        <a href="/" class="back-btn">Go Back</a>
+    </div>
+</body>
+</html>
